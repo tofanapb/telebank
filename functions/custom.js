@@ -175,19 +175,18 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		centerMode: true,
 		centerPadding: '20px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
 				slidesToShow: 2,
-				centerMode: true,
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
-				centerMode: true,
 			}
 		}
 			],
