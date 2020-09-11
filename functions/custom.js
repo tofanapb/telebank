@@ -51,6 +51,7 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 13,
 		slidesToScroll: 1,
+		centerPadding: '20px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
@@ -91,6 +92,8 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '10px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
@@ -176,7 +179,7 @@ $(document).ready(function () {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		centerMode: true,
-		centerPadding: '20px',
+		centerPadding: '50px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
