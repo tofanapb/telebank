@@ -42,7 +42,8 @@ input {
     letter-spacing: -1.5px;
     color: #fff;
 }
-.section_title p {
+.section_title a {
+    display: block;
     font-size: 24px;
     font-weight: 300;
     letter-spacing: -0.6px;
@@ -182,7 +183,6 @@ header top area css end
 
 .menu_slider_item h4 {
     font-size: 16px;
-    color: #fff;
     font-weight: 300;
     padding-right: 10px;
 }
@@ -197,6 +197,7 @@ header top area css end
     align-items: center;
     padding: 20px 0;
     letter-spacing: -0.45px;
+    color: #fff;
 }
 .menu_slider_item:nth-child(7) a{
     border-bottom: 3px solid #4db948;
@@ -205,7 +206,8 @@ header top area css end
 .menu_slider_icon.active svg {
     fill: #4db948;
 }
-.menu_slider_item svg:hover {
+.menu_slider_item a:hover .menu_slider_item h4, .menu_slider_item a:hover svg {
+    color: #4db948 !important;
     fill: #4db948;
 }
 /* ================
@@ -417,6 +419,10 @@ hero slider css end
     display: inline-block;
     margin-bottom: 10px;
     width: 100%;
+}
+.servics_content_box_link_list ul li a:hover {
+    color: #fff !important;
+    background: #4db948;
 }
 .servics_content_box_inner {
     padding-bottom: 20px;
@@ -673,7 +679,7 @@ slider area css end
 ====================*/
 /* slider_area end */
 /* Blog_post_area css */
-.blog_post_area .section_title h2, .blog_post_area .section_title p {
+.blog_post_area .section_title h2, .blog_post_area .section_title a {
     color: #404a58;
 }
 
@@ -695,21 +701,18 @@ slider area css end
     left: 160px;
 }
 
-.post_slider_image {
-    background-position: center;
-    background-size: cover;
-    min-height: 140px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.post_slider_image img {
     border-radius: 10px 10px 0 0;
+    width: 100%;
 }
 
 .post_share_btn ul li {
     display: inline-block;
     padding-left: 10px;
 }
-
+.post_share_btn ul li a img:hover {
+    opacity: .8;
+}
 .post_content_excert {
     background: #fff;
     padding: 20px;
@@ -740,6 +743,23 @@ slider area css end
 .post_left_btn a.hero_boxed_btn {
     font-size: 14px;
     margin: 0;
+}
+.post_left_btn .hero_boxed_btn:hover {
+    color: #fff !important;
+    background: #404a58 !important;
+    border-color: #404a58 !important;
+}
+.post_share_btn_inner {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 0 10px;
+    
+}
+.post_share_btn_inner .post_share_btn {
+    left: 0;
+    position: absolute;
 }
 /* ================
 blog post area css end
@@ -773,7 +793,7 @@ blog post area css end
     color: #404a58;
 }
 .footer_area {
-    padding-bottom: 80px;
+    padding-bottom: 95px;
     padding-top: 50px;
 }
 /* ================
@@ -1014,6 +1034,9 @@ Responsive Css Start
     .author_profile {
         left: 0;
     }
+    .hero_slider_img img {
+        min-height: 100%;
+    }
 }
 
 /* small scren*/
@@ -1021,7 +1044,7 @@ Responsive Css Start
 	.section_title h2 {
         font-size: 30px;
     }
-    .section_title p {
+    .section_title a {
         font-size: 18px;
     }
     .post_content_excert a h4 {
@@ -1035,20 +1058,15 @@ Responsive Css Start
         padding-right: 5px;
         margin-right: 5px;
     }
-    .post_slider_image {
-        padding: 10px;
-    }
     .post_left_btn a.hero_boxed_btn {
         font-size: 12px;
         padding: 5px 10px;
     }
     
+    
 }
 @media only screen and (max-width:375px) {
     .post_slider_image {flex-flow: column-reverse;justify-content: space-evenly;}
-    .hero_slider_img img {
-        min-height: 180px;
-    }
 }
 /* ================
 Responsive css end

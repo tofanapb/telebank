@@ -57,28 +57,24 @@ $(document).ready(function () {
 			breakpoint: 991,
 			settings: {
 				slidesToShow: 8,
-				centerMode: true,
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 4,
-				centerMode: true,
 			}
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 3,
-				centerMode: true,
+				slidesToShow: 4,
 			}
 		},
 		{
 			breakpoint: 375,
 			settings: {
 				slidesToShow: 2,
-				centerMode: true,
 			}
 		}
 			],
@@ -122,7 +118,6 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 8,
 		slidesToScroll: 1,
-		centerMode: true,
 		responsive: [{
 			breakpoint: 991,
 			settings: {
@@ -133,19 +128,24 @@ $(document).ready(function () {
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 4,
+				centerMode: true,
+				centerPadding: '20px',
 			}
 		},
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 4,
+				centerMode: true,
+				centerPadding: '10px',
 			}
 		},
 		{
 			breakpoint: 375,
 			settings: {
-				slidesToShow: 2,
+				slidesToShow: 3,
 				centerMode: true,
+				centerPadding: '0px',
 			}
 		}
 			],
@@ -174,6 +174,14 @@ $(document).ready(function () {
 				slidesToShow: 1,
 				centerMode: true,
 			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '20px',
+			}
 		}
 			],
 		});
@@ -187,18 +195,27 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		centerMode: true,
 		centerPadding: '50px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
 				slidesToShow: 2,
+				centerMode: true,
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
+				centerMode: true,
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '20px',
 			}
 		}
 			],
@@ -228,6 +245,22 @@ $(document).ready(function () {
 				slidesToShow: 1,
 				centerMode: true,
 				centerPadding: '50px',
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '10px',
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '10px',
 			}
 		}
 			],
