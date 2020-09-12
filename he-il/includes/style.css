@@ -48,7 +48,9 @@ input {
     letter-spacing: -0.6px;
     color: #fff;
 }
-/* base css end */
+/* ================
+base css end
+====================*/
 
 /* Header_Top_area css */
 .header_menu_area.stiky {
@@ -169,6 +171,9 @@ input {
     fill: #fff;
 }
 a.advancs_submit_btn {position: absolute;top: 4px;}
+/* ================
+header top area css end
+====================*/
 /* header_menu_area css */
 .header_menu_area {
     background: #404a58;
@@ -196,18 +201,16 @@ a.advancs_submit_btn {position: absolute;top: 4px;}
 .menu_slider_item:nth-child(7) a{
     border-bottom: 3px solid #4db948;
 }
+.menu_slider_item:nth-child(1) a {justify-content:space-evenly;}
 .menu_slider_icon.active svg {
     fill: #4db948;
 }
 .menu_slider_item svg:hover {
     fill: #4db948;
 }
-/* .menu_slider_item.stiky_logo {
-    display: none;
-}
-.header_menu_area.stiky .menu_slider_item.stiky_logo {
-    display: block;
-} */
+/* ================
+header menu area end
+====================*/
 /* hero_area css */
 .hero_area {
     padding-top: 50px;
@@ -215,6 +218,12 @@ a.advancs_submit_btn {position: absolute;top: 4px;}
 }
 .hero_slider_img img{
     border-radius: 20px;
+}
+.hero_slider_img_inner {
+    display: flex;
+}
+.hero_slider_img:nth-child(2) {
+    padding-right: 10px;
 }
 .hero_slider_right_box_title h4 {
     font-size: 36px;
@@ -241,7 +250,6 @@ a.advancs_submit_btn {position: absolute;top: 4px;}
 .hero_slider_right_box_content p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 1.67;
     letter-spacing: -0.45px;
     color: #2c323c;
 }
@@ -268,7 +276,7 @@ a.hero_boxed_btn:hover {
 
 .hero_slider_right_box {
     background: #fff;
-    padding: 45px 20px;
+    padding: 50px 20px;
     border-radius: 20px;
 }
 .hero_wrapper {
@@ -280,13 +288,8 @@ a.hero_boxed_btn:hover {
 .row.row_revers .col-md-3 {
     padding-left: 15px;
 }
-.hero_area .col-md-3, 
-.hero_area .col-md-4, 
-.hero_area .col-md-5, 
-.hero_area .col-md-6,
-.hero_area .col-md-7, .hero_area .col-md-8,
-.hero_area .col-md-9, .hero_area .col-md-10, 
-.hero_area .col-md-11, .hero_area .col-md-12 {
+.hero_area .row.row_revers .col-md-3,
+.hero_area .row.row_revers .col-md-9 {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -343,12 +346,15 @@ a.hero_boxed_btn:hover {
 }
 
 a.progessPrev.slick-arrow {
-    right: -30px;
+    right: -20px;
 }
 
 a.progessNext.slick-arrow {
-    left: -30px;
+    left: -20px;
 }
+/* ================
+hero slider css end
+====================*/
 /* servics area css */
 .servics_area {
     padding: 20px 0;
@@ -358,6 +364,9 @@ a.progessNext.slick-arrow {
     background-size: cover;
     min-height: 200px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .servics_image_box h4 {
     font-size: 24px;
@@ -365,7 +374,7 @@ a.progessNext.slick-arrow {
     letter-spacing: -0.6px;
     text-align: center;
     color: #ffffff;
-    padding: 75px 30px;
+    padding: 20px;
 }
 .servics_content_box {
     background: #fff;
@@ -373,7 +382,7 @@ a.progessNext.slick-arrow {
     border-radius: 10px;
 }
 .pdt_20 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 .servics_content_box img {
     margin-top: -45px;
@@ -436,17 +445,8 @@ a.progessNext.slick-arrow {
     color: #404a58;
     line-height: 14px;
 }
-.servics_area .col-md-3, 
-.servics_area .col-md-4,  
-.servics_area .col-md-6,
-.servics_area .col-md-7,
- .servics_area .col-md-8,
-.servics_area .col-md-9, .servics_area .col-md-10, 
-.servics_area .col-md-11, .servics_area .col-md-12 {
-    padding-left: 10px;
-    padding-right: 10px;
-}
- .servics_area .col-md-5 {
+ .servics_area .col-md-5, .servics_area .col-md-7,
+ .servics_area .col-md-2, .servics_area .col-md-3 {
     padding-left: 10px;
     padding-right: 15px;
 }
@@ -458,9 +458,17 @@ a.progessNext.slick-arrow {
     margin-bottom: 30px;
     border-radius: 20px 20px 0 0;
 }
-
-.span {display: inline-block;background: #4db948;width: 10px;height: 35px;position: relative;border-radius: 10px;margin-top: -3px;margin-bottom: 15px;z-index: 1;}
-
+.span {
+    display: inline-block;
+    background: #4db948;
+    width: 10px;
+    height: 35px;
+    position: relative;
+    border-radius: 10px;
+    margin-top: -3px;
+    margin-bottom: 15px;
+    z-index: 1;
+}
 .span:before {
     position: absolute;
     content: "";
@@ -477,7 +485,9 @@ a.progessNext.slick-arrow {
     padding-left: 20px;
     padding-right: 30px;
 }
-/* servics slider css */
+/* ================
+servics slider css
+====================*/
 .servics_slider_inner .slick-arrow {
     top: 20%;
 }
@@ -548,7 +558,7 @@ a.progessNext.slick-arrow {
 .servics_gift_box_content:after {
     position: absolute;
     content: "";
-    left: -40px;
+    left: -30px;
     bottom: -50px;
     width: 80px;
     height: 100%;
@@ -560,7 +570,7 @@ a.progessNext.slick-arrow {
 .servics_gift_box_content:before {
     position: absolute;
     content: "";
-    left: -30px;
+    left: -20px;
     top: -40px;
     width: 50px;
     height: 100%;
@@ -569,6 +579,9 @@ a.progessNext.slick-arrow {
     background-size: cover;
     z-index: -1;
 }
+/* ================
+Servics area css end
+====================*/
 /* team_membor_area css */
 .team_membor_area {
     padding: 50px 0;
@@ -617,6 +630,9 @@ a.progessNext.slick-arrow {
 .team_single_content:nth-child(even) {
     transform: rotate(-2deg);
 }
+/* ================
+team membor css end
+====================*/
 /* slider_area start */
 .slider_area {
     position: relative;
@@ -627,6 +643,7 @@ a.progessNext.slick-arrow {
     position: absolute;
     left: 20%;
     top: 5%;
+    z-index: -1;
 }
 .slider_single_item {
     background: #404a58;
@@ -651,6 +668,9 @@ a.progessNext.slick-arrow {
     font-style: italic;
     font-weight: 300;
 }
+/* ================
+slider area css end
+====================*/
 /* slider_area end */
 /* Blog_post_area css */
 .blog_post_area .section_title h2, .blog_post_area .section_title p {
@@ -721,6 +741,9 @@ a.progessNext.slick-arrow {
     font-size: 14px;
     margin: 0;
 }
+/* ================
+blog post area css end
+====================*/
 /* footer_area css */
 .footer_copyright {
     text-align: center;
@@ -753,6 +776,9 @@ a.progessNext.slick-arrow {
     padding-bottom: 80px;
     padding-top: 50px;
 }
+/* ================
+footer_css end
+====================*/
 /*===================
 StyleSheet Css End
 =====================*/
@@ -762,6 +788,11 @@ Responsive Css Start
 =====================*/
 
 /*Large screen*/
+@media only screen and (max-width:1300px) {
+    .servics_gift_box_content:before, .servics_gift_box_content:after {
+        left: -10px;
+    }
+}
 @media only screen and (max-width:1200px) {
 	a.progessPrev.slick-arrow {
         right: -15px;
@@ -783,19 +814,57 @@ Responsive Css Start
         font-size: 20px;
     }
     .hero_slider_right_box_title p, .hero_slider_right_box_content h4,
-    .hero_slider_right_box_content p {
+    .hero_slider_right_box_content p,
+    .servics_slider_menu .dropdown .btn-primary {
         font-size: 15px;
     }
     .hero_slider_right_box {
-        padding: 36px 20px;
+        padding: 76px 30px;
     }
     .hero_patner_slider .slick-arrow {
         top: 20%;
     }
+    .header_top_form label.search_icon svg {
+        left: 115px;
+    }
+    .servics_content_box_top {
+        margin-bottom: 39px;
+    }
+}
+@media only screen and (max-width:1199px) {
+    .hero_slider_right_box {
+        padding: 44px 20px;
+    }
+    .hero_patner_text p, .servics_gift_box_text p,
+    .servics_gift_box_text h4 {
+        font-size: 14px;
+    }
+    .servics_image_box h4, .servics_conrtent_box_title h4,
+    .team_item h4, .team_item p {
+        font-size: 18px;
+    }
+    .servics_image_box {
+        min-height: 216px;
+    }
+    .servics_content_box h4 {
+        font-size: 24px;
+    }
 }
 /* Tablet Layout waid */
 @media only screen and (min-width:992px) and (max-width:1024px) {
-	
+	.slider_left_absulate_img {
+        left: 10%;
+    }
+    .servics_area .col-md-7 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    ul.dropdown-menu {
+        min-width: 80px;
+    }
+    .servics_content_box_link_list ul li a {
+        padding: 8px 19px;
+    }
 }
 
 /* tablet */
@@ -816,26 +885,171 @@ Responsive Css Start
         display: none;
     }
     .header_top_form label.search_icon svg {
-        left: 55px;
-        top: 30%;
+        left: 10px;
+        top: 55%;
     }
     .row.row_revers {
         display: flex;
         flex-flow: column-reverse;
     }
+    .hero_slider_img img{
+        width: 100%;
+    }
+    .row.row_revers .col-md-3 {
+        padding:0;
+    }
+    .hero_slider_right_box {
+        border-radius: 0 0 20px 20px;
+    }
+    .hero_slider_img img {
+        border-radius:20px 20px 0 0 ;
+    }
+    .pdt_20 {
+        margin-bottom: 0;
+    }
+    .servics_image_box, .servics_content_box_inners {
+        margin-bottom: 20px;
+    }
+    .servics_content_box_inners, .servics_slider_menu {
+        text-align: center;
+    }
+    .servics_content_box h4 {   
+        text-align: right;
+    }
+    .servics_conrtent_box_item p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .servics_gift_box_content {
+        display: none;
+    }
+    .servics_slider_menu .dropdown .btn-primary {
+        font-size: 24px;
+    }
+    .dropdown-menu {
+        left: 0;
+        min-width: 80px;
+    }
+    .servics_slider_menu:after {
+        bottom: -150px;
+    }
+    .servics_slider_menu:before {
+        top: -60px;
+    }
+    .mobile_devics_left_img{
+        position: relative;
+        z-index: 1;
+    }
+    .mobile_devics_left_img:after {
+        position: absolute;
+        content: "";
+        left: -10px;
+        bottom: -120px;
+        width: 80px;
+        height: 80%;
+        background-image: url(../images/pics/bdaybaloons.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .mobile_devics_left_img:before {
+        position: absolute;
+        content: "";
+        left: -10px;
+        top: -30px;
+        width: 53px;
+        height: 80%;
+        background-image: url(../images/pics/confettileft.png);
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .slider_left_absulate_img {
+        left: 0;
+    }
+    .servics_area {
+        overflow: hidden;
+    }
+    .servics_area .col-md-5, .servics_area .col-md-7,
+    .servics_area .col-md-2, .servics_area .col-md-3 {
+       padding-left: 15px;
+       padding-right: 15px;
+   }
+   .hero_slider_item {
+        margin: 0 10px;
+    }
+    .slider_content img {
+        width: 100%;
+    }
+    .slider_single_item {
+        margin: 65px 0;
+    }
+    .header_top_form form input[type="search"] {
+        width: 100%;
+    }
+    .header_top_area {
+        position: relative;
+        z-index: 1;
+    }
+    .author_profile {
+        position: absolute;
+        left: -350px;
+        bottom: 90px;
+    }
+     
 }
 
 
 /* Mobile Layout */
 @media only screen and (max-width: 767px) {
-   
+    .team_item img {
+        width: 42px !important;
+    }
+    .team_single_content img {
+        width: 100%;
+    }
+    .blog_post_absulate_left_img{
+        left: 0;
+    }
+    .author_profile {
+        left: 0;
+    }
 }
 
 /* small scren*/
 @media only screen and (max-width:575px) {
-	
+	.section_title h2 {
+        font-size: 30px;
+    }
+    .section_title p {
+        font-size: 18px;
+    }
+    .post_content_excert a h4 {
+        font-size: 14px;
+    }
+    .post_content_excert span, .post_content_excert p,
+    .footer_menu_area ul li a {
+        font-size: 12px;
+    }
+    .footer_menu_area ul li {
+        padding-right: 5px;
+        margin-right: 5px;
+    }
+    .post_slider_image {
+        padding: 10px;
+    }
+    .post_left_btn a.hero_boxed_btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
 }
-
+@media only screen and (max-width:375px) {
+    .post_slider_image {flex-flow: column-reverse;justify-content: space-evenly;}
+    .hero_slider_img img {
+        min-height: 180px;
+    }
+}
 /* ================
 Responsive css end
 ====================*/

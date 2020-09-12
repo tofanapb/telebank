@@ -26,6 +26,7 @@ $(document).ready(function () {
 		settings: {
 			slidesToShow: 4,
 			centerMode: true,
+			centerPadding: '50px',
 			nextArrow: false,
 			prevArrow: false,
 		}
@@ -33,7 +34,7 @@ $(document).ready(function () {
 	{
 		breakpoint: 767,
 		settings: {
-			slidesToShow: 4,
+			slidesToShow: 3,
 			centerMode: true,
 			nextArrow: false,
 			prevArrow: false,
@@ -55,14 +56,7 @@ $(document).ready(function () {
 		responsive: [{
 			breakpoint: 991,
 			settings: {
-				slidesToShow: 6,
-				centerMode: true,
-			}
-		},
-		{
-			breakpoint: 1100,
-			settings: {
-				slidesToShow: 9,
+				slidesToShow: 8,
 				centerMode: true,
 			}
 		},
@@ -76,7 +70,14 @@ $(document).ready(function () {
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 3,
+				centerMode: true,
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 2,
 				centerMode: true,
 			}
 		}
@@ -92,18 +93,14 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		centerMode: true,
+		centerMode: false,
 		centerPadding: '10px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
 				slidesToShow: 1,
-			}
-		},
-		{
-			breakpoint: 1100,
-			settings: {
-				slidesToShow: 1,
+				centerPadding: '0px',
+
 			}
 		},
 		{
@@ -116,7 +113,7 @@ $(document).ready(function () {
 		});
 
 
-	//team membor slider 
+	//servics slider 
 	$('.servics_slider_inner').slick({
 		dots: false,
 		cssEase: 'linear',
@@ -125,17 +122,29 @@ $(document).ready(function () {
 		nextArrow: '<a href="#" class="progessNext">></a>',
 		slidesToShow: 8,
 		slidesToScroll: 1,
+		centerMode: true,
 		responsive: [{
 			breakpoint: 991,
 			settings: {
-				slidesToShow: 2,
-				centerMode: true,
+				slidesToShow: 7,
 			}
 		},
 		{
 			breakpoint: 767,
 			settings: {
-				slidesToShow: 1,
+				slidesToShow: 4,
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 2,
 				centerMode: true,
 			}
 		}
@@ -210,6 +219,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 2,
 				centerMode: true,
+				centerPadding: '60px',
 			}
 		},
 		{
@@ -217,6 +227,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				centerMode: true,
+				centerPadding: '50px',
 			}
 		}
 			],
