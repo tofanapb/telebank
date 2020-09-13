@@ -16,7 +16,7 @@ $(document).ready(function () {
 	dots: false,
 	cssEase: 'linear',
 	rtl: true,
-	slidesToShow: 7,
+	slidesToShow: 6,
 	slidesToScroll: 1,
 	prevArrow: '<a href="#" class="progessPrev"><</a>',
 	nextArrow: '<a href="#" class="progessNext">></a>',
@@ -26,7 +26,7 @@ $(document).ready(function () {
 		settings: {
 			slidesToShow: 4,
 			centerMode: true,
-			centerPadding: '50px',
+			centerPadding: '20px',
 			nextArrow: false,
 			prevArrow: false,
 		}
@@ -50,13 +50,13 @@ $(document).ready(function () {
 		rtl: true,
 		prevArrow: '<a href="#" class="progessPrev"><</a>',
 		nextArrow: '<a href="#" class="progessNext">></a>',
-		slidesToShow: 13,
+		slidesToShow: 12,
 		slidesToScroll: 1,
 		centerPadding: '20px',
 		responsive: [{
 			breakpoint: 991,
 			settings: {
-				slidesToShow: 8,
+				slidesToShow: 6,
 			}
 		},
 		{
@@ -68,13 +68,15 @@ $(document).ready(function () {
 		{
 			breakpoint: 575,
 			settings: {
-				slidesToShow: 4,
+				slidesToShow: 3,
+				centerPadding: '10px',
 			}
 		},
 		{
 			breakpoint: 375,
 			settings: {
 				slidesToShow: 2,
+				centerPadding: '10px',
 			}
 		}
 			],

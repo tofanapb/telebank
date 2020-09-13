@@ -199,16 +199,24 @@ header top area css end
     letter-spacing: -0.45px;
     color: #fff;
 }
-.menu_slider_item:nth-child(7) a{
+.menu_slider_item:nth-child(6) a{
     border-bottom: 3px solid #4db948;
 }
 .menu_slider_item:nth-child(1) a {justify-content:space-evenly;}
 .menu_slider_icon.active svg {
     fill: #4db948;
 }
-.menu_slider_item a:hover .menu_slider_item h4, .menu_slider_item a:hover svg {
+.menu_slider_item a:hover .menu_slider_item h4, 
+.menu_slider_item a:hover svg, .menu_slider_right_item a svg:hover{
     color: #4db948 !important;
     fill: #4db948;
+}
+.menu_slider_item:hover a{
+    border-bottom: 3px solid #4db948;
+}
+.menu_slider_right_item {
+    padding-top: 20px;
+    text-align: left;
 }
 /* ================
 header menu area end
@@ -301,8 +309,22 @@ a.hero_boxed_btn:hover {
     background-color: #4db948;
     padding: 10px 40px;
 }
+.hero_patner_flex {
+    display: flex;
+    flex-flow: row;
+}
+.hero_patner_flex_item_slider {
+    width: 93%;
+}
+
+.hero_patner_flex_item {
+    width: 7%;
+}
 .hero_patner_slider_item {
     text-align: center;
+}
+.hero_patner_slider_item:hover {
+    opacity: .8;
 }
 .hero_patner_text p {
     font-size: 18px;
@@ -370,13 +392,16 @@ hero slider css end
     justify-content: center;
     align-items: center;
 }
-.servics_image_box h4 {
+.servics_image_box a h4 {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: -0.6px;
     text-align: center;
     color: #ffffff;
     padding: 20px;
+}
+.servics_image_box a h4:hover {
+    color:#4db948;
 }
 .servics_content_box {
     background: #fff;
@@ -490,6 +515,20 @@ hero slider css end
 .servics_content_box_inner .servics_conrtent_box_item {
     padding-left: 20px;
     padding-right: 30px;
+}
+.servics_image_box a {
+    transition: all .5s;
+    transform: scale(.90);
+}
+.servics_image_box {
+    transition: all .5s;
+    transform: scale(1);
+}
+.servics_image_box:hover {
+    transform: scale(.97);
+}
+.servics_image_box:hover a {
+    transform: scale(1);
 }
 /* ================
 servics slider css
@@ -938,7 +977,11 @@ Responsive Css Start
     }
     .servics_conrtent_box_item p {
         font-size: 16px;
-        line-height: 20px;
+        line-height: 24px;
+    }
+    .servics_conrtent_box_title h4 {
+        font-size: 24px;
+        line-height: 33px;
     }
     .servics_gift_box_content {
         display: none;
@@ -1014,7 +1057,47 @@ Responsive Css Start
     .author_profile {
         position: absolute;
         left: -350px;
-        bottom: 90px;
+        bottom: 70px;
+    }
+    .menu_slider_right_item {
+        display: none;
+    }
+    .hero_patner_flex_item_slider {
+        width: 90%;
+    }
+    .hero_patner_flex_item {
+        width: 10%;
+    }
+    .hero_patner_slider a.progessPrev.slick-arrow {
+        display: none !important;
+    }
+    .header_top_form {
+        padding-top: 0;
+    }
+    .hero_slider_right_box_title h4 {
+        font-size: 36px;
+    }
+    .hero_slider_right_box_title p, .hero_slider_right_box_content h4,
+    .hero_slider_right_box_content p,
+    .servics_slider_menu .dropdown .btn-primary {
+        font-size: 24px;
+    }
+    .dropdown .btn-primary, .header_top_form form input[type="search"],
+    .menu_slider_item h4, a.hero_boxed_btn{
+        font-size: 16px;
+    }
+    .hero_patner_text p, .servics_gift_box_text p,
+    .servics_gift_box_text h4 {
+        font-size: 16px;
+    }
+    .section_title h2 {
+        font-size: 36px;
+    }
+    .section_title a, .post_content_excert a h4{
+        font-size: 18px;
+    }
+    .post_content_excert p {
+        font-size: 16px;
     }
      
 }
@@ -1036,6 +1119,12 @@ Responsive Css Start
     }
     .hero_slider_img img {
         min-height: 100%;
+    }
+    .hero_patner_flex_item_slider {
+        width: 86%;
+    }
+    .hero_patner_flex_item {
+        width: 14%;
     }
 }
 
@@ -1062,11 +1151,29 @@ Responsive Css Start
         font-size: 12px;
         padding: 5px 10px;
     }
+    .hero_patner_flex_item_slider {
+        width: 80%;
+    }
+    .hero_patner_flex_item {
+        width: 20%;
+    }
+    .hero_patner_area {
+        padding: 10px 25px;
+    }
     
     
 }
 @media only screen and (max-width:375px) {
     .post_slider_image {flex-flow: column-reverse;justify-content: space-evenly;}
+    .hero_patner_flex_item_slider {
+        width: 70%;
+    }
+    .hero_patner_flex_item {
+        width: 30%;
+    }
+    .menu_slider_item h4 {
+        font-size: 12px;
+    }
 }
 /* ================
 Responsive css end
