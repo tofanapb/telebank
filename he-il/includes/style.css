@@ -782,6 +782,7 @@ slider area css end
 .post_left_btn a.hero_boxed_btn {
     font-size: 14px;
     margin: 0;
+    border-radius: 0;
 }
 .post_left_btn .hero_boxed_btn:hover {
     color: #fff !important;
@@ -793,7 +794,6 @@ slider area css end
     top: 50px;
     display: flex;
     flex-flow: column-reverse;
-    padding: 0 10px;
     
 }
 .post_share_btn_inner .post_share_btn {
@@ -1113,6 +1113,7 @@ Responsive Css Start
     }
     .blog_post_absulate_left_img{
         left: 0;
+        top: 70px;
     }
     .author_profile {
         left: 0;
@@ -1125,6 +1126,49 @@ Responsive Css Start
     }
     .hero_patner_flex_item {
         width: 14%;
+    }
+    button.btn.btn-primary.dropdown-toggle br {
+        display: none;
+    }
+    button.btn.btn-primary.dropdown-toggle b {
+        padding-left: 10px;
+    }
+    button.btn.btn-primary.dropdown-toggle {
+        padding-bottom: 10px;
+    }
+    .mobile_devics_left_img:after {
+        width: 70px;
+        height: 55px;
+    }
+    .mobile_devics_left_img:before {
+        width: 50px;
+        height: 60px;
+    }
+    .servics_slider_menu:after {
+        bottom: -120px;
+        right: 0;
+        width: 38px;
+        height: 42px;
+        background-size: contain;
+        z-index: 999999;
+    }
+    .servics_slider_menu:before {
+        right: 0;
+        top: -50px;
+        width: 62px;
+        height: 85px;
+    }
+    button.btn.btn-primary.dropdown-toggle {
+        font-size: 18px;
+        letter-spacing: -0.4px;
+    }
+    .team_right_absulate_img img, .slider_left_absulate_img img,
+    .blog_post_absulate_img img, .blog_post_absulate_left_img img {
+        width: 150px;
+        height: auto;
+    }
+    .author_image {
+        padding-top: 0;
     }
 }
 
@@ -1180,6 +1224,9 @@ Responsive Css Start
     }
     .hero_patner_text p {
         font-size: 11px;
+    }
+    button.btn.btn-primary.dropdown-toggle {
+        font-size: 14px;
     }
 }
 /* ================
