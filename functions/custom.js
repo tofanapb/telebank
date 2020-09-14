@@ -39,7 +39,16 @@ $(document).ready(function () {
 			nextArrow: false,
 			prevArrow: false,
 		}
-	}
+	},
+	{
+		breakpoint: 575,
+		settings: {
+			slidesToShow: 3,
+			centerPadding: '10px',
+			nextArrow: false,
+			prevArrow: false,
+		}
+	},
 		],
 	});
 
@@ -75,7 +84,7 @@ $(document).ready(function () {
 		{
 			breakpoint: 375,
 			settings: {
-				slidesToShow: 2,
+				slidesToShow: 3,
 				centerPadding: '10px',
 			}
 		}
@@ -145,7 +154,7 @@ $(document).ready(function () {
 		{
 			breakpoint: 375,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 4,
 				centerMode: true,
 				centerPadding: '0px',
 			}
@@ -254,7 +263,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				centerMode: true,
-				centerPadding: '10px',
+				centerPadding: '30px',
 			}
 		},
 		{
@@ -262,7 +271,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				centerMode: true,
-				centerPadding: '10px',
+				centerPadding: '20px',
 			}
 		}
 			],
