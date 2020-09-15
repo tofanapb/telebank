@@ -172,6 +172,7 @@ base css end
     fill: #fff;
 }
 a.advancs_submit_btn {position: absolute;top: 4px;}
+
 /* ================
 header top area css end
 ====================*/
@@ -188,8 +189,8 @@ header top area css end
 }
 
 .menu_slider_icon svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     fill: #fff;
 }
 .menu_slider_item a {
@@ -215,8 +216,17 @@ header top area css end
     border-bottom: 3px solid #4db948;
 }
 .menu_slider_right_item {
-    padding-top: 20px;
     text-align: left;
+}
+.hide_col.autohor_btn {
+    display: block;
+}
+
+.hide_col.autohor_btn .author_name {
+    display: none;
+}
+.header_menu_area.stiky .hide_col.autohor_btn .author_name {
+    display: block;
 }
 /* ================
 header menu area end
@@ -375,6 +385,46 @@ a.progessPrev.slick-arrow {
 
 a.progessNext.slick-arrow {
     left: -20px;
+}
+.header_area_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hide_col {
+    min-width: 150px;
+    display: none;
+}
+
+.menu_col {
+    width: calc(100% - 150px);
+}
+
+.hide_col .logo img {
+    max-width: 80%;
+    filter: brightness(0) invert(1);
+}
+
+.header_menu_area.stiky .hide_col {
+    display: block;
+}
+
+.header_menu_area.stiky .menu_col {
+    width: calc(100% - 300px);
+}
+.menu_slider_right_item.menu_right_stiky {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu_slider_right_item.menu_right_stiky .author_name {
+    padding-right: 10px;
+}
+
+.menu_slider_right_item.menu_right_stiky .author_name button {
+    background: none;
+    border: none;
+    color: #fff;
 }
 /* ================
 hero slider css end
