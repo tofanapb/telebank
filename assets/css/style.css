@@ -183,9 +183,10 @@ header top area css end
 }
 
 .menu_slider_item h4 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
     padding-right: 10px;
+    line-height: 1.17;
 }
 
 .menu_slider_icon svg {
@@ -199,6 +200,7 @@ header top area css end
     padding: 20px 0;
     letter-spacing: -0.45px;
     color: #fff;
+    margin-left: 45px;
 }
 .menu_slider_item:nth-child(6) a{
     border-bottom: 3px solid #4db948;
@@ -228,6 +230,10 @@ header top area css end
 .header_menu_area.stiky .hide_col.autohor_btn .author_name {
     display: block;
 }
+
+.header_menu_area.stiky .menu_slider_item a {
+    margin-left: 0px;
+}
 /* ================
 header menu area end
 ====================*/
@@ -246,21 +252,21 @@ header menu area end
     padding-right: 10px;
 }
 .hero_slider_right_box_title h4 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: -0.45px;
     color: #404a58;
 }
 
 .hero_slider_right_box_title p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: -0.45px;
     color: #404a58;
 }
 
 .hero_slider_right_box_content h4 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: -0.6px;
     color: #4db948;
@@ -268,7 +274,7 @@ header menu area end
 }
 
 .hero_slider_right_box_content p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: -0.45px;
     color: #2c323c;
@@ -293,10 +299,12 @@ a.hero_boxed_btn:hover {
     background: transparent;
     color: #4db948;
 }
-
+.hero_slider_right_box_content a.hero_boxed_btn {
+    font-size: 16px;
+}
 .hero_slider_right_box {
     background: #fff;
-    padding: 50px 20px;
+    padding: 62px 40px;
     border-radius: 20px;
 }
 .hero_wrapper {
@@ -441,6 +449,22 @@ hero slider css end
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.servics_image_box:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 20px;
+    opacity: .5;
+    visibility: visible;
+    transition: all .5s;
 }
 .servics_image_box a h4 {
     font-size: 24px;
@@ -580,6 +604,10 @@ hero slider css end
 .servics_image_box:hover a {
     transform: scale(1);
 }
+.servics_image_box_inner:hover .servics_image_box:after {
+    opacity: 0;
+    visibility: hidden;
+}
 /* ================
 servics slider css
 ====================*/
@@ -685,7 +713,7 @@ Servics area css end
 
 .team_right_absulate_img {
     position: absolute;
-    top: 0;
+    top: 5%;
     z-index: -1;
 }
 
@@ -740,10 +768,9 @@ team membor css end
     top: 5%;
     z-index: -1;
 }
+.slider_left_absulate_img img, .team_right_absulate_img img {width: 150px;}
 .slider_single_item {
-    background: #404a58;
-    border: 2px solid #404a58;
-    margin: 40px 18px;
+    margin: 20px 18px;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
@@ -751,10 +778,8 @@ team membor css end
     display: flex;
 }
 .slider_single_item:nth-child(even) {
-    transform: rotate(-15deg);
+    transform: rotate(-5deg);
     z-index: 99;
-    background: #4db948;
-    border: 2px solid #4db948;
 }
 .slider_content h4 {
     font-size: 24px;
@@ -762,6 +787,18 @@ team membor css end
     color: #fff;
     font-style: italic;
     font-weight: 300;
+}
+.gray_bg {
+    background: #404a58;
+}
+.white_bg {
+    background-color: #fff;
+}
+.green_bg {
+    background: #4db948;
+}
+.slider_single_item.white_bg .slider_content h4 {
+    color: #404a58;
 }
 /* ================
 slider area css end
@@ -779,17 +816,22 @@ slider area css end
 
 .blog_post_absulate_img {
     position: absolute;
-    top: 0;
+    top: 50px;
     z-index: -1;
-    right: 0;
+    right: 50px;
 }
 .blog_post_absulate_left_img{
     position: absolute;
-    top: 0;
+    top: 50px;
     z-index: -1;
     left: 160px;
 }
-
+.blog_post_absulate_img img {
+    width: 150px;
+}
+.blog_post_absulate_left_img img {
+    width: 180px;
+}
 .post_slider_image img {
     border-radius: 10px 10px 0 0;
     width: 100%;
@@ -841,14 +883,17 @@ slider area css end
 }
 .post_share_btn_inner {
     position: relative;
-    top: 50px;
     display: flex;
-    flex-flow: column-reverse;
-    
+    justify-content: space-between;
+    align-items: center;
+}
+.post_share_btn_inner .post_share_btn, .post_share_btn_inner .post_left_btn {
+    position: absolute;
+    top: 10px;
 }
 .post_share_btn_inner .post_share_btn {
-    left: 0;
-    position: absolute;
+    left: 5px;
+    top: 15px;
 }
 /* ================
 blog post area css end
@@ -928,7 +973,7 @@ Responsive Css Start
         font-size: 15px;
     }
     .hero_slider_right_box {
-        padding: 76px 30px;
+        padding: 73px 30px;
     }
     .hero_patner_slider .slick-arrow {
         top: 20%;
@@ -942,7 +987,7 @@ Responsive Css Start
 }
 @media only screen and (max-width:1199px) {
     .hero_slider_right_box {
-        padding: 44px 20px;
+        padding: 42px 17px;
     }
     .hero_patner_text p, .servics_gift_box_text p,
     .servics_gift_box_text h4 {
@@ -981,6 +1026,9 @@ Responsive Css Start
     
 }
 @media only screen and (max-width:991px) {
+    .menu_slider_item a {
+        margin-left: 0;
+    }
     .hero_slider_img img {
         min-height: 250px;
     }
@@ -1095,7 +1143,7 @@ Responsive Css Start
         width: 100%;
     }
     .slider_single_item {
-        margin: 65px 0;
+        margin: 30px 10px;
     }
     .header_top_form form input[type="search"] {
         width: 100%;
