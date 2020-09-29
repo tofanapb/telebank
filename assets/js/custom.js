@@ -277,6 +277,72 @@ $(document).ready(function () {
 			],
 		});
 
+		//category page blog post slider 
+	$('.post_slider_inner_category').slick({
+		dots: false,
+		cssEase: 'linear',
+		rtl: true,
+		prevArrow: '<a href="#" class="progessPrev"><</a>',
+		nextArrow: '<a href="#" class="progessNext">></a>',
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		responsive: [{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '60px',
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '50px',
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '30px',
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '20px',
+			}
+		}
+			],
+		});
+
+		//category page blog post slider 
+	$('.post_slider_inner_category1').slick({
+		dots: false,
+		cssEase: 'linear',
+		rtl: true,
+		prevArrow: '<a href="#" class="progessPrev"><</a>',
+		nextArrow: '<a href="#" class="progessNext">></a>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		responsive: [{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '50px',
+			}
+		}
+			],
+		});
+
    //       scroll_top   
    $(window).scroll(function () {
 		if ($(this).scrollTop()) {

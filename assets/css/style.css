@@ -423,7 +423,8 @@ a.progessNext.slick-arrow {
 }
 .menu_slider_right_item.menu_right_stiky {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    align-items:center;
 }
 .menu_slider_right_item.menu_right_stiky .author_name {
     padding-right: 10px;
@@ -933,6 +934,57 @@ blog post area css end
 /* ================
 footer_css end
 ====================*/
+
+/* ================
+Category page css start
+====================*/
+.header_menu_area.stiky .menu_slider_right_item.menu_right_stiky .icons:first-child{
+    display: none;
+}
+body.category .hero_area .hero_slider_right_box{
+    padding: 35px;
+}
+.post_slider_inner_category {
+    display: flex;
+    justify-content: space-between;
+}
+.post_slider_2nd_item:first-child {
+    margin-bottom: 20px;
+}
+.post_slider_wrapper_2nd {
+    margin-top: 30px;
+}
+.category_page_btn {
+    text-align: center;
+    margin-top: 20px;
+}
+a.category_btm_btn {
+    font-size: 16px;
+    color: #404a58;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.6px;
+    border: 1px solid #404a58;
+    padding: 8px 25px;
+    border-radius: 20px;
+    display: inline-block;
+}
+a.category_btm_btn:hover {
+    color: #fff !important;
+    background: #404a58 !important;
+}
+
+body.category .blog_post_area .blog_post_absulate_img {
+    right: 0;
+}
+body.category .blog_post_area .blog_post_absulate_left_img{
+    left:0;
+}
+/* ================
+Category page css end
+====================*/
+
+
 /*===================
 StyleSheet Css End
 =====================*/
