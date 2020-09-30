@@ -945,6 +945,9 @@ footer_css end
 /* ================
 Category page css start
 ====================*/
+.text_white h2 {
+    color: #fff !important;
+}
 .header_menu_area.stiky .menu_slider_right_item.menu_right_stiky .icons:first-child{
     display: none;
 }
@@ -980,12 +983,18 @@ a.category_btm_btn:hover {
     color: #fff !important;
     background: #404a58 !important;
 }
-
 body.category .blog_post_area .blog_post_absulate_img {
     right: 0;
 }
 body.category .blog_post_area .blog_post_absulate_left_img{
     left:0;
+}
+.footer_copyright p.category {
+    font-size: 12px;
+    color: #000000;
+    line-height: 1;
+    margin: 0;
+    padding-top: 10px;
 }
 /* ================
 Category page css end
@@ -1062,6 +1071,16 @@ Responsive Css Start
     .servics_content_box h4 {
         font-size: 24px;
     }
+    /* category page css */
+    body.category .hero_area .hero_slider_right_box a.hero_boxed_btn {
+        padding: 5px 8px;
+    }
+    body.category .hero_area .hero_slider_right_box{
+        padding: 35px 25px;
+    } 
+    .post_slider_inner_category .post_slider_single_item:last-child .post_content_excert {
+        padding: 35px 20px;
+    }   
 }
 /* Tablet Layout waid */
 @media only screen and (min-width:992px) and (max-width:1024px) {
@@ -1326,6 +1345,9 @@ Responsive Css Start
     }
     .author_image {
         padding-top: 0;
+    }
+    .post_slider_inner_category .post_slider_single_item:last-child .post_content_excert {
+        padding: 35px 20px;
     }
 }
 

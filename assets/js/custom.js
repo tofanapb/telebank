@@ -278,12 +278,12 @@ $(document).ready(function () {
 		});
 
 		//category page blog post slider 
-	$('.post_slider_inner_category').slick({
+	$('.post_slider_inner_category, .post_slider_inner_category2').slick({
 		dots: false,
 		cssEase: 'linear',
 		rtl: true,
-		prevArrow: '<a href="#" class="progessPrev"><</a>',
-		nextArrow: '<a href="#" class="progessNext">></a>',
+		prevArrow: '<a href="#" class="progessNext"> > </a>',
+		nextArrow: '<a href="#" class="progessPrev"> < </a>',
 		slidesToShow: 2,
 		slidesToScroll: 1,
 		centerPadding: '20px',
@@ -304,11 +304,19 @@ $(document).ready(function () {
 			}
 		},
 		{
+			breakpoint: 676,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '0px',
+			}
+		},
+		{
 			breakpoint: 575,
 			settings: {
 				slidesToShow: 1,
 				centerMode: true,
-				centerPadding: '30px',
+				centerPadding: '0px',
 			}
 		},
 		{
@@ -316,28 +324,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				centerMode: true,
-				centerPadding: '20px',
-			}
-		}
-			],
-		});
-
-		//category page blog post slider 
-	$('.post_slider_inner_category1').slick({
-		dots: false,
-		cssEase: 'linear',
-		rtl: true,
-		prevArrow: '<a href="#" class="progessPrev"><</a>',
-		nextArrow: '<a href="#" class="progessNext">></a>',
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		centerPadding: '20px',
-		responsive: [{
-			breakpoint: 991,
-			settings: {
-				slidesToShow: 1,
-				centerMode: true,
-				centerPadding: '50px',
+				centerPadding: '0px',
 			}
 		}
 			],
