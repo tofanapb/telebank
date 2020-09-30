@@ -234,6 +234,13 @@ header top area css end
 .header_menu_area.stiky .menu_slider_item a {
     margin-left: 0px;
 }
+.menu_slider_inner {
+    display: none;
+}
+
+.menu_slider_inner.slick-slider {
+    display: block;
+}
 /* ================
 header menu area end
 ====================*/
