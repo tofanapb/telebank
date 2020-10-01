@@ -938,6 +938,9 @@ blog post area css end
     padding-bottom: 95px;
     padding-top: 50px;
 }
+.footer_menu_area ul li:first-child {
+    border-right: none;
+}
 /* ================
 footer_css end
 ====================*/
