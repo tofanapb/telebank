@@ -1,4 +1,32 @@
+
+
 $(document).ready(function () {
+	// date picker 
+	$( function() {
+		$( "#datepicker" ).datepicker();
+	} );
+	
+
+	$('#loadmore').click(function (e) { 
+		e.preventDefault();
+		$('#postgrid2').show();
+		$('.post_slider_inner').slick('setPosition'); 
+		$(this).hide();
+
+	});
+
+	$('#lodemore1').click(function (e) { 
+		e.preventDefault();
+		$('#postmore1').show();
+		$('.post_slider_inner').slick('setPosition'); 
+		$(this).hide();
+
+	});
+
+	//liked
+	$('.likebtn').on('click' , function(){
+		$(this).toggleClass('active');
+	});
 
 	//Menu
 	$('.advancd_search').on('click' , function(){
@@ -24,7 +52,7 @@ $(document).ready(function () {
 	responsive: [{
 		breakpoint: 991,
 		settings: {
-			slidesToShow: 4,
+			slidesToShow: 5,
 			centerMode: true,
 			centerPadding: '10px',
 			nextArrow: false,
@@ -34,7 +62,7 @@ $(document).ready(function () {
 	{
 		breakpoint: 767,
 		settings: {
-			slidesToShow: 2,
+			slidesToShow: 4,
 			centerMode: true,
 			nextArrow: false,
 			prevArrow: false,
@@ -43,8 +71,9 @@ $(document).ready(function () {
 	{
 		breakpoint: 575,
 		settings: {
-			slidesToShow: 2,
+			slidesToShow: 3,
 			centerPadding: '0px',
+			centerMode: true,
 			nextArrow: false,
 			prevArrow: false,
 		}
@@ -56,6 +85,8 @@ $(document).ready(function () {
 	$('.hero_patner_slider').slick({
 		dots: false,
 		cssEase: 'linear',
+		autoplay: true,
+  		autoplaySpeed: 1000,
 		rtl: true,
 		prevArrow: '<a href="#" class="progessNext"> > </a>',
 		nextArrow: '<a href="#" class="progessPrev"> < </a>',
@@ -107,6 +138,7 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				centerPadding: '0px',
+				dots: true,
 
 			}
 		},
@@ -114,6 +146,7 @@ $(document).ready(function () {
 			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
+				dots: true,
 			}
 		}
 			],
@@ -123,6 +156,8 @@ $(document).ready(function () {
 	//servics slider 
 	$('.servics_slider_inner').slick({
 		dots: false,
+		autoplay: true,
+  		autoplaySpeed: 1000,
 		cssEase: 'linear',
 		rtl: true,
 		prevArrow: '<a href="#" class="progessNext"> > </a>',

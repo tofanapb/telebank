@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/css/bootstrap-rtl.css" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -17,6 +18,7 @@
 
     <!-- Js Link  -->
     <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!--<script type="text/javascript" src="functions/jquery-migrate-1.2.1.min.js"></script>-->
     <script type="text/javascript" src="assets/js/slick.js"></script>
@@ -44,9 +46,18 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path
                                             d="M495 466.2L377.2 348.4c29.2-35.6 46.8-81.2 46.8-130.9C424 103.5 331.5 11 217.5 11 103.4 11 11 103.5 11 217.5S103.4 424 217.5 424c49.7 0 95.2-17.5 130.8-46.7L466.1 495c8 8 20.9 8 28.9 0 8-7.9 8-20.9 0-28.8zm-277.5-83.3C126.2 382.9 52 308.7 52 217.5S126.2 52 217.5 52C308.7 52 383 126.3 383 217.5s-74.3 165.4-165.5 165.4z" />
-                                    </svg></label>
-                                <input type="search" name="search" placeholder="חפש הטבות, אירועים, בתי עסק....">
+                                    </svg>
+                                </label>
+                                <input type="text" name="search" placeholder="חפש הטבות, אירועים, בתי עסק">
                             </form>
+                            <div class="search_resul">
+                                <ul>
+                                    <li><a href="#">Resul will be here</a></li>
+                                    <li><a href="#">Resul will be here</a></li>
+                                    <li><a href="#">Resul will be here</a></li>
+                                    <li><a href="#">Resul will be here</a></li>
+                                </ul>
+                            </div>
                             <div class="advancd_search">
                                 <a href="#" class="advancs_search_btn">חיפוש מתקדם</a>
                             </div>
@@ -105,6 +116,7 @@
                         <div class="author_profile">
                             <div class="author_image">
                                 <img src="assets/images/layer-2.png" alt="">
+                                <span class="notification_count">3</span>
                             </div>
                             <div class="author_name">
                                 <div class="dropdown">
@@ -159,7 +171,7 @@
                                                 <circle cx="212" cy="210" r="20" />
                                             </svg>
                                         </div>
-                                        <h4>אירועים (3)</h4>
+                                        <h4>אירועים <span>(3)</span></h4>
                                     </a>
                                 </div>
                                 <div class="menu_slider_item">
@@ -173,7 +185,7 @@
                                                     d="M256 312.295c-32.653-26.534-80-3.999-80 43.571 0 20.993 12.556 43.242 37.319 66.128 17.126 15.828 34.104 26.34 34.817 26.779 4.822 2.969 10.904 2.969 15.727 0 .714-.439 17.691-10.951 34.817-26.779 24.764-22.886 37.32-45.135 37.32-66.128 0-47.681-47.411-70.05-80-43.571zm0 105.747c-21.948-15.32-50-41.707-50-62.176 0-24.42 23.571-34.633 37.374-13.114 5.897 9.198 19.361 9.188 25.252 0C282.409 321.265 306 331.407 306 355.866c0 20.471-28.058 46.861-50 62.176z" />
                                             </svg>
                                         </div>
-                                        <h4>רווחה (9)</h4>
+                                        <h4>רווחה <span>(9)</span></h4>
                                     </a>
                                 </div>
                                 <div class="menu_slider_item">
@@ -185,7 +197,7 @@
                                                     d="M366.174 505.06c3.266 5.128 9.295 7.765 15.255 6.713l118.177-20.838c5.975-1.054 10.727-5.603 12.04-11.526s-1.071-12.054-6.041-15.534l-64.513-45.172-10.244-53.908c-4.016-22.792 11.96-45.994 28.875-70.558 19.599-28.461 39.863-57.891 33.711-92.786-12.638-71.677-51.06-115.78-53.106-119.298-3.385-4.564-9.065-6.822-14.652-5.837L307.497 97.154c-5.595.986-10.152 5.049-11.772 10.495-1.007 4.813-21.602 59.372-9.103 130.269 6.154 34.896 35.263 55.619 63.413 75.661 24.298 17.299 47.249 33.638 51.268 56.432.006.033.016.064.022.097.006.032.007.064.013.097l10.237 53.871-45.038 64.322c-3.48 4.969-3.623 11.545-.363 16.662zm65.003-56.676l27.557 19.295-46.852 8.261zm-109.33-323.298l99.896-17.614c12.946 17.797 23.383 37.435 31.005 58.102-25.494-3.447-51.845.461-75.272 11.562-13.133 5.148-32.106 19.482-64.839 19.029-.485-23.98 2.592-48.047 9.21-71.079zm86.246 197.052c-11.686-12.372-26.296-22.774-40.658-32.999-24.298-17.299-47.249-33.638-51.268-56.432-.383-2.172-.733-4.349-1.054-6.531 39.226-.304 62.556-16.999 75.21-21.93 22.339-10.586 48.113-12.743 71.857-6.212.616 2.866 1.199 5.739 1.708 8.626 4.02 22.793-11.958 45.997-28.874 70.563-9.999 14.52-20.172 29.292-26.921 44.915zM12.417 490.938l119.177 20.838c5.944 1.039 11.971-1.585 15.24-6.725 3.254-5.116 3.108-11.688-.369-16.654l-45.12-64.438L110.701 370c4.024-22.788 26.971-39.125 51.265-56.421 28.15-20.042 57.259-40.766 63.413-75.661 12.648-71.737-8.399-126.313-9.103-130.268-1.62-5.445-6.178-9.508-11.772-10.495L86.328 76.315c-5.596-.986-11.268 1.273-14.652 5.837-2.063 3.543-40.463 47.592-53.106 119.298-6.152 34.896 14.112 64.325 33.711 92.786 16.916 24.566 32.894 47.77 28.874 70.563l-.005.037-.001.005-9.343 53.884-65.327 45.093c-5.011 3.459-7.434 9.604-6.132 15.553 1.303 5.948 6.072 10.519 12.07 11.567zM90.26 107.472l99.896 17.614c6.618 23.033 9.695 47.099 9.212 71.078-32.813.454-52.006-13.998-64.84-19.028-23.426-11.101-49.777-15.009-75.272-11.562 7.621-20.668 18.058-40.305 31.004-58.102zm-13.272 169.75c-16.916-24.566-32.894-47.769-28.874-70.563.509-2.887 1.092-5.76 1.708-8.626 23.744-6.53 49.518-4.375 71.857 6.212 12.42 4.84 35.93 21.627 75.21 21.93-.322 2.182-.672 4.359-1.054 6.531-4.019 22.794-26.97 39.133-51.268 56.432-14.362 10.225-28.973 20.627-40.658 32.999-6.749-15.622-16.922-30.394-26.921-44.915zm4.779 171.08L101.162 476l-47.491-8.304zM241.001 15v31c0 8.284 6.716 15 15 15s15-6.716 15-15V15c0-8.284-6.716-15-15-15s-15 6.716-15 15zM316.001 82.214L337.214 61c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0L294.788 61c-5.858 5.858-5.858 15.355 0 21.213 5.857 5.859 15.355 5.859 21.213.001zM174.788 39.787c-5.858 5.858-5.858 15.355 0 21.213l21.213 21.213c5.856 5.858 15.354 5.858 21.213 0 5.858-5.858 5.858-15.355 0-21.213l-21.213-21.213c-5.857-5.858-15.355-5.858-21.213 0z" />
                                             </svg>
                                         </div>
-                                        <h4>תרבות ופנאי (40)</h4>
+                                        <h4>תרבות ופנאי <span>(40)</span></h4>
                                     </a>
                                 </div>
                                 <div class="menu_slider_item">
@@ -197,7 +209,7 @@
                                                     d="M506.218 465.892c-85.762-66.816-186.603-27.676-286-1.759l-44.787-167.16c8.768.098 17.639 2.285 25.885 6.761 7.185 4.162 16.221 1.638 20.369-5.222 14.083-23.287 44.338-35.186 74.526-19.745 11.546 5.906 24.618-4.69 21.321-17.174-21.706-82.186-102.357-131.827-183.173-117.916l-7.116-26.561c-2.143-8.001-10.366-12.753-18.37-10.607-8.002 2.144-12.75 10.369-10.606 18.372l7.116 26.559C28.092 179.929-16.568 263.526 5.745 345.31c3.449 12.637 20.484 15.126 27.314 3.799 14.704-24.381 46.175-34.942 74.437-19.864 7.102 3.769 15.811 1.283 19.893-5.464 4.89-8.087 11.5-14.483 19.076-19.002l44.606 166.483c-57.346 12.893-114.973 17.962-169.802-7.172-7.529-3.452-16.433-.145-19.885 7.385-3.452 7.531-.146 16.435 7.385 19.887 171.887 78.793 352.344-100.494 479.012-1.803 6.534 5.09 15.959 3.921 21.051-2.614 5.091-6.536 3.921-15.962-2.614-21.053zM278.097 242.157c-21.52-2.292-43.197 3.723-60.478 16.81-9.867-33.521-28.385-63.891-54.799-87.624 47.703.425 92.805 27.407 115.277 70.814zm-247.96 66.501c-2.212-47.762 22.405-94.329 64.561-119.104-10.911 33.428-11.969 68.974-3.67 103.307-21.564-2.698-43.385 2.974-60.891 15.797zm90.238-22.086c-8.538-34.573-6.096-70.568 9.005-103.677 29.619 21.107 49.752 50.98 59.666 85.257-24.453-4.163-49.581 2.576-68.671 18.42zM285.293 135.955h15.95c8.284 0 14.999-6.716 14.999-15s-6.716-15-14.999-15h-15.95c-8.284 0-14.999 6.716-14.999 15s6.715 15 14.999 15zM391.054 171.359c27.791 0 50.401-22.612 50.401-50.404 0-27.793-22.61-50.405-50.401-50.405s-50.401 22.612-50.401 50.405c0 27.792 22.61 50.404 50.401 50.404zm0-70.809c11.25 0 20.402 9.153 20.402 20.404 0 11.25-9.152 20.404-20.402 20.404s-20.402-9.153-20.402-20.404 9.152-20.404 20.402-20.404zM391.054 45.952c8.284 0 14.999-6.716 14.999-15V15c0-8.284-6.716-15-14.999-15s-14.999 6.716-14.999 15v15.951c0 8.285 6.715 15.001 14.999 15.001zM316.811 67.919c5.856 5.858 15.355 5.859 21.212 0 5.858-5.858 5.858-15.355 0-21.214l-11.278-11.279c-5.857-5.859-15.355-5.859-21.212 0-5.858 5.858-5.858 15.355 0 21.214zM316.811 173.989l-11.278 11.279c-5.858 5.858-5.858 15.355 0 21.214 5.856 5.858 15.355 5.859 21.212 0l11.278-11.279c5.858-5.858 5.858-15.355 0-21.214-5.857-5.859-15.355-5.859-21.212 0zM376.055 210.957v15.95c0 8.284 6.716 15 14.999 15s14.999-6.716 14.999-15v-15.95c0-8.284-6.716-15-14.999-15s-14.999 6.716-14.999 15zM444.085 173.989c-5.858 5.858-5.858 15.355 0 21.214l11.278 11.279c5.856 5.858 15.355 5.859 21.212 0 5.858-5.858 5.858-15.355 0-21.214l-11.278-11.279c-5.857-5.859-15.355-5.859-21.212 0zM466.051 120.954c0 8.284 6.716 15 14.999 15H497c8.284 0 14.999-6.716 14.999-15s-6.716-15-14.999-15h-15.95c-8.284 0-14.999 6.716-14.999 15zM465.297 67.919l11.278-11.279c5.858-5.858 5.858-15.355 0-21.214-5.857-5.859-15.355-5.859-21.212 0l-11.278 11.279c-5.858 5.858-5.858 15.355 0 21.214 5.856 5.858 15.355 5.859 21.212 0z" />
                                             </svg>
                                         </div>
-                                        <h4>תיירות ונופש (91)</h4>
+                                        <h4>תיירות ונופש <span>(91)</span></h4>
                                     </a>
                                 </div>
                                 <div class="menu_slider_item">
@@ -209,7 +221,7 @@
                                                     d="M503.995 105.373c-6.868-8.498-17.076-13.371-28.004-13.371H85.737l-3.485-24.976C79.784 49.34 64.456 36.002 46.597 36.002H16c-8.836 0-16 7.164-16 16s7.164 16 16 16h30.597c1.984 0 3.688 1.482 3.961 3.447l43.189 309.529c2.468 17.687 17.796 31.024 35.655 31.024h17.349c-1.776 5.008-2.752 10.391-2.752 16 0 26.467 21.533 48 48 48s48-21.533 48-48c0-5.609-.976-10.992-2.752-16h85.504c-1.776 5.008-2.752 10.391-2.752 16 0 26.467 21.533 48 48 48s48-21.533 48-48c0-5.609-.976-10.992-2.752-16H448c8.836 0 16-7.164 16-16s-7.164-16-16-16H129.403c-1.984 0-3.688-1.482-3.961-3.447l-3.984-28.553H436.56c16.858 0 31.663-11.965 35.205-28.458l39.429-183.997c2.291-10.681-.333-21.679-7.199-30.174zM208 428.002c0 8.822-7.178 16-16 16s-16-7.178-16-16 7.178-16 16-16 16 7.177 16 16zm176 0c0 8.822-7.178 16-16 16s-16-7.178-16-16 7.178-16 16-16 16 7.177 16 16zm95.905-299.163l-39.428 183.993c-.394 1.836-2.042 3.169-3.917 3.169H116.992l-26.79-192H475.99c1.583 0 2.569.808 3.117 1.486.547.677 1.129 1.808.798 3.352z" />
                                             </svg>
                                         </div>
-                                        <h4>צרכנות (82)</h4>
+                                        <h4>צרכנות <span>(82)</span></h4>
                                     </a>
                                 </div>
                                 <div class="menu_slider_item">
@@ -244,8 +256,7 @@
                             </div>
                             <div class="author_name">
                                 <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button"
-                                        data-toggle="dropdown">אלונה בן דוד
+                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">אלונה בן דוד
                                         <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Account</a></li>
@@ -494,7 +505,7 @@
                 <div class="servics_box_content_wrapper">
                     <div class="row">
                         <div class="col-md-5">
-                            <div class="row pdt_20">
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="servics_image_box_inner">
                                         <div class="servics_image_box"
@@ -602,16 +613,10 @@
                     <div class="col-md-2">
                         <div class="mobile_devics_left_img">
                             <div class="servics_slider_menu">
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-toggle="dropdown"><b>יום הולדת שמח!</b> <br>
-                                        היום (01.06)
-                                        <span class="caret"></span></button>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Account</a></li>
-                                        <li><a href="#">Edit Profile</a></li>
-                                        <li><a href="#">Settings</a></li>
-                                    </ul>
+                                <p>יום הולדת שמח!</p>
+                                <div class="date_picker">
+                                    <input type="text" id="datepicker" value="היום (01.06)">
+                                    <label for="datepicker"><span class="caret"></span></label>
                                 </div>
                             </div>
                         </div>
@@ -862,7 +867,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                            <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -885,7 +893,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -908,7 +919,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -931,7 +945,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -978,7 +995,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1004,7 +1024,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1030,7 +1053,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1056,7 +1082,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1100,7 +1129,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1123,7 +1155,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1146,7 +1181,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1169,7 +1207,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1216,7 +1257,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1242,7 +1286,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1268,7 +1315,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1294,7 +1344,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1338,7 +1391,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1361,7 +1417,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1384,7 +1443,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1407,7 +1469,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1454,7 +1519,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1480,7 +1548,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1506,7 +1577,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1532,7 +1606,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1576,7 +1653,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1599,7 +1679,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1622,7 +1705,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1645,7 +1731,10 @@
                         <div class="post_share_btn_inner">
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1692,7 +1781,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1718,7 +1810,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1744,7 +1839,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
@@ -1770,7 +1868,10 @@
                             </div>
                             <div class="post_share_btn">
                                 <ul>
-                                    <li><a href="#"><img src="assets/images/heart.png" alt=""></a></li>
+                                    <li class="likebtn">
+                                        <img class='unliked' src="assets/images/icon/heart-regular.svg" alt="❤">
+                                            <img class='liked' src="assets/images/icon/heart-solid.svg" alt="❤">
+                                    </li>
                                     <li><a href="#"><img src="assets/images/share-1.png" alt=""></a></li>
                                 </ul>
                             </div>
