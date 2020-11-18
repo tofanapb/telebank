@@ -56,6 +56,9 @@ input {
 .container {
   position: relative;
 }
+.section_padding{
+  padding: 80px 0 !important;
+}
 /* ================
   base css end
   ====================*/
@@ -444,11 +447,18 @@ a.slick-arrow {
   outline: none;
 }
 a.progessPrev.slick-arrow {
-  right: -20px;
+  right: 40px;
 }
 
 a.progessNext.slick-arrow {
-  left: -20px;
+  left: 40px;
+}
+a.progessPrev.slider_arrow_balck.slick-arrow {
+    right: -20px;
+}
+
+a.progessNext.slider_arrow_balck.slick-arrow {
+    left: -20px;
 }
 .header_area_content {
   display: flex;
@@ -918,6 +928,10 @@ a.progessNext.slick-arrow {
 .blog_post_absulate_left_img img {
   width: 180px;
 }
+.post_slider_image {
+  min-height: 100px;
+  background: #d0c4b5;
+}
 .post_slider_image img {
   border-radius: 10px 10px 0 0;
   width: 100%;
@@ -959,6 +973,10 @@ a.progessNext.slick-arrow {
 }
 .post_slider_single_item {
   margin: 0 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  min-height: 300px;
 }
 .post_left_btn a.hero_boxed_btn {
   font-size: 14px;
@@ -1065,6 +1083,14 @@ body.category .hero_area .hero_slider_right_box {
 .post_slider_inner_category {
   display: flex;
   justify-content: space-between;
+}
+.post_slider_inner_category .post_slider_single_item {
+  min-height: auto;
+  background: none;
+}
+
+.post_slider_inner_category .post_slider_image {
+  min-height: auto;
 }
 .post_slider_2nd_item:first-child {
   margin-bottom: 20px;
@@ -1250,11 +1276,12 @@ body.category .blog_post_area .blog_post_absulate_left_img {
 }
 
 .hotel_information_box_content {
-    background: #fff;
     padding: 20px 20px 20px 90px;
     border-radius: 20px 0 0 20px;
+    position: relative;
 }
 
+.hotel_information_box_content:before {content: '';width: calc(100% - 20px);height: 100%;background: #fff;position: absolute;left: 0;top: 0;border-radius: 20px 0 0 20px;z-index: -1;}
 .hotel_information_datebox_title h5 {
     line-height: 1.08;
     letter-spacing: -0.6px;
@@ -1346,7 +1373,9 @@ body.category .blog_post_area .blog_post_absulate_left_img {
   color: #404a58;
   padding-bottom: 10px;
 }
-
+.hotel_information_date ul li a {
+    color: #404a58;
+}
 .hotel_information_date ul li svg {
   width: 20px;
   height: auto;
@@ -1365,9 +1394,11 @@ body.category .blog_post_area .blog_post_absulate_left_img {
   ====================*/
 /* footer_top_fixed_area start */
 .footer_top_fixed_area {
-  position: relative;
   background: #363e49;
   padding: 30px 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
 }
 .footer_top_absolute_left_img {
   position: absolute;
@@ -1538,6 +1569,12 @@ body.three_item_two.future .hotel_information_date {
   fill: #e50405;
   width: 10px;
   height: auto;
+}
+.footerbtn {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 24px;
 }
 /* ================
   03_item_02 page css end
