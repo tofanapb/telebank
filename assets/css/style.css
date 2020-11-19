@@ -228,7 +228,7 @@ a.advancs_submit_btn {
 }
 
 .menu_slider_item h4 {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   padding-right: 10px;
   line-height: 1.17;
@@ -246,6 +246,7 @@ a.advancs_submit_btn {
   letter-spacing: -0.45px;
   color: #fff;
   margin-left: 45px;
+  font-size: 18px;
 }
 .menu_slider_item:nth-child(6) a {
   border-bottom: 3px solid #4db948;
@@ -267,9 +268,6 @@ a.advancs_submit_btn {
 }
 .menu_slider_right_item {
   text-align: left;
-}
-.hide_col.autohor_btn {
-  display: block;
 }
 
 .hide_col.autohor_btn .author_name {
@@ -311,6 +309,30 @@ a.advancs_submit_btn {
   font-weight: bold;
   letter-spacing: -0.45px;
   color: #404a58;
+}
+.hero_area .slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 25px;
+  background: #fff;
+  color: #404A58 !important;
+  box-shadow: 0 0 10px #404A58;
+}
+
+.hero_area a.progessNext.slick-arrow {
+  left: -12px;
+}
+
+.hero_area a.progessPrev.slick-arrow {
+  right: -12px;
+}
+
+.hero_area .slick-list.draggable {
+  margin: 0 -10px;
+  border-radius: 20px;
 }
 
 .hero_slider_right_box_title p {
@@ -447,11 +469,11 @@ a.slick-arrow {
   outline: none;
 }
 a.progessPrev.slick-arrow {
-  right: 40px;
+  right: -25px;
 }
 
 a.progessNext.slick-arrow {
-  left: 40px;
+  left: -25px;
 }
 a.progessPrev.slider_arrow_balck.slick-arrow {
     right: -20px;
@@ -472,7 +494,7 @@ a.progessNext.slider_arrow_balck.slick-arrow {
 }
 
 .menu_col {
-  width: calc(100% - 150px);
+  width: 100%;
 }
 
 .hide_col .logo img {
@@ -936,6 +958,7 @@ a.progessNext.slider_arrow_balck.slick-arrow {
   border-radius: 10px 10px 0 0;
   width: 100%;
 }
+.post_slider_inner .slick-list.draggable {border-radius: 10px;}
 
 .post_share_btn ul li {
   display: inline-block;
@@ -2046,7 +2069,12 @@ body.three_item_two.future .hotel_information_date {
   body.category .blog_post_area .blog_post_absulate_img {
     right: -70px;
   }
-
+  .hero_area ul.slick-dots {
+    right: 113px;
+    width: auto;
+    left: auto;
+    bottom: 10px;
+}
   body.category .blog_post_area .blog_post_absulate_left_img {
     left: -70px;
   }

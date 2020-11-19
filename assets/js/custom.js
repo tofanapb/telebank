@@ -124,7 +124,7 @@ $(document).ready(function () {
 
 		//morgages page slider
 	$('.hero_slider_inner').slick({
-		dots: false,
+		dots: true,
 		cssEase: 'linear',
 		rtl: true,
 		prevArrow: '<a href="#" class="progessNext"> > </a>',
