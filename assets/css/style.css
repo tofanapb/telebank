@@ -1602,9 +1602,11 @@ body.three_item_two.future .hotel_information_date {
 /* ================
   03_item_02 page css end
   ====================*/
+
 /* ================
-  order_first_section page css start
+  order_first_page_section page css start
   ====================*/
+  /* order_top_menu_area css start*/
   .order_top_menu_area {
     background: #363e49;
     padding: 20px 0;
@@ -1702,11 +1704,15 @@ body.three_item_two.future .hotel_information_date {
     text-align: left;
     padding-top: 11px;
 }
-
 .order_close img {
     width: 25px;
     height: 25px;
 }
+ /* order_top_menu_area css end*/
+ /* order_body_content_area css start*/
+ .order_body_title {
+   margin: 20px 0;
+ }
 .order_body_title h4 {
   font-size: 48px;
   font-weight: bold;
@@ -1719,7 +1725,7 @@ body.three_item_two.future .hotel_information_date {
 .order_body_content_area {
   background: #f3f3f3;
   padding-bottom: 80px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .order_body_title p {
@@ -1729,16 +1735,6 @@ body.three_item_two.future .hotel_information_date {
   letter-spacing: -0.45px;
   color: #404a58;
 }
-
-
-
-
-
-
-
-
-
-
 .order_prics p {
   font-size: 18px;
   font-weight: 300;
@@ -1750,7 +1746,6 @@ body.three_item_two.future .hotel_information_date {
 .order_prics p b {
   font-size: 14px;
 }
-
 .order_prics p span {
   font-size: 36px;
   font-weight: bold;
@@ -1763,13 +1758,15 @@ body.three_item_two.future .hotel_information_date {
   text-align: center;
   color: #ffffff;
 }
-
 .order_name {
   background: #4db948;
   width: 20%;
   padding: 24px 20px;
   border-radius: 0 10px 10px 0;
   box-shadow: 0 3px 18px rgba(0, 0, 0, .12);
+}
+.order_name a h4 span {
+  font-weight: 300;
 }
 
 .order_number_form {
@@ -1883,6 +1880,8 @@ body.three_item_two.future .hotel_information_date {
 .order_selected_prics p span {
   font-size: 28px;
 }
+ /* order_body_content_area css end*/
+  /* order_footer_area css start*/
 .order_footer_area {
   background: #f3f3f3;
   position: relative;
@@ -1918,8 +1917,249 @@ body.three_item_two.future .hotel_information_date {
 .order_footer_link_btn a:hover {
   color: #404a58 !important;
 }
+/* order_footer_area css end*/
+/* order_guest_page css*/
+  .order_pricing_list_Top_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order_pricing_list_Top_item .order_prics {
+    width: 80%;
+    text-align: left;
+}
+/* order_guest_contact_page css*/
+.order_numbering_item span.ok {
+  background: #4db948;
+}
+
+.order_numbering_item span.ok svg {
+  fill: #fff;
+  width: 20px;
+  position: relative;
+  left: 6px;
+  top: -3px;
+}
+.order_contact_from_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact_form_selected_option {
+  box-shadow: -16px 5px 19px 0px rgba(0, 0, 0, .12);
+  background: #fff;
+  padding: 14px 20px;
+  border-radius: 20px 0 0 20px;
+  width: 52%;
+}
+.contact_order_selected_option p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -0.45px;
+  color: #404a58;
+  text-align: right;
+  margin: 0;
+}
+
+.contact_order_selected_option select {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.17;
+  letter-spacing: -0.45px;
+  color: #404a58;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 4.5px;
+}
+.contact_order_selected_option {
+  background: #fff;
+  box-shadow: 8px 3px 18px rgba(0, 0, 0, .12);
+  padding: 22px 30px;
+}
+
+.contact_form_selected_option input, .contact_form_order_page input {
+  width: 50%;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.contact_form_selected_option label {
+  display: block;
+  width: 50%;
+  float: right;
+  margin: 0;
+}
+.contact_form_order_page {
+  width: 80%;
+  background: #fff;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, .12);
+  padding: 20px 30px;
+  border-radius: 20px 0 0 20px;
+}
+.contact_form_order_page label {
+  display: block;
+  width: 100%;
+}
+.contact_form_order_page input, .contact_form_order_page textarea {
+  width: 100%;
+}
+.contact_form_order_page textarea {
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.order_contact_from_inner .order_contact_from_item:last-child .order_name {
+  padding: 69px 20px;
+}
+.contact_form_order_page input {
+  margin-bottom: 5px;
+}
+
+/* order_done_cinema_page css */
+.order_order_done_cinema_page .order_body_title,
+.order_order_done_cinema_page .order_footer_link_btn {
+  text-align: center;
+}
+
+.order_order_done_cinema_page .order_body_title h4 {
+  margin: 10px 0;
+}
+
+.order_done_page_content {
+  width: 800px;
+  margin: auto;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, .12);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.order_done_content_title {
+  background: #4db948;
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.order_done_content_title a h4 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.75px;
+  color: #ffffff;
+}
+
+.order_done_page_print_download {
+  background: #f3f3f3;
+}
+.download_btn_list {
+  text-align: left;
+}
+.download_btn_list ul li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+.order_done_page_print_download p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.08;
+  letter-spacing: -0.6px;
+  color: #404a58;
+}
+
+.order_done_page_print_download {padding: 10px 30px;}
+
+.order_done_content_wrapper {
+  background: #fff;
+  padding: 20px 30px;
+}
+
+.order_done_content_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order_done_content_item p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: -0.45px;
+  color: #404a58;
+  margin: 0;
+}
+
+.order_done_content_item b {
+  font-size: 14px;
+  letter-spacing: -0.4px;
+}
+
+.order_done_content_item_btm p {
+  border-bottom: 1px solid #f3f3f3;
+  padding-bottom: 20px;
+  line-height: 1.44;
+  letter-spacing: -0.45px;
+  color: #404a58;
+  font-size: 16px;
+}
+
+.order_done_content_btm {
+  background: #fff;
+  padding: 0 30px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.order_done_content_btm p {
+  font-weight: 300;
+  line-height: 1.44;
+  letter-spacing: -0.45px;
+  color: #404a58;
+  font-size: 16px;
+  margin: 0;
+}
+.order_done_content_item {
+  position: relative;
+}
+
+.order_done_content_item:before {
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  width: 1px;
+  height: 28px;
+  background: #404a58;
+  content: "";
+  opacity: 0.1;
+}
+
+.order_done_content_item:last-child {
+  position: inherit;
+}
+.order_order_done_cinema_page .order_footer_area {
+  padding-bottom: 20px;
+}
+.order_done_content_title p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.67;
+  letter-spacing: -0.45px;
+  color: #ffffff;
+  margin-top: 5px;
+}
+.order_done_content_title p img {
+  width: 15px;
+  height: auto;
+}
 /* ================
-  order_first_section page css end
+  order_first_page_section page css end
   ====================*/
 
 
