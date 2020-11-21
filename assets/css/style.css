@@ -1611,7 +1611,14 @@ body.three_item_two.future .hotel_information_date {
     background: #363e49;
     padding: 20px 0;
 }
-
+.order_top_menu_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order_top_right_side, .order_complete_numbering, .order_close {
+  width: 33.333333%;
+}
 .order_title h4 {
     font-size: 24px;
     font-weight: bold;
@@ -1702,7 +1709,6 @@ body.three_item_two.future .hotel_information_date {
 
 .order_close {
     text-align: left;
-    padding-top: 11px;
 }
 .order_close img {
     width: 25px;
@@ -1973,11 +1979,13 @@ body.three_item_two.future .hotel_information_date {
   border: 1px solid #e8e8e8;
   border-radius: 10px;
   padding: 4.5px;
+  width: 100%;
 }
 .contact_order_selected_option {
   background: #fff;
   box-shadow: 8px 3px 18px rgba(0, 0, 0, .12);
   padding: 22px 30px;
+  width: 28%;
 }
 
 .contact_form_selected_option input, .contact_form_order_page input {
@@ -2162,13 +2170,6 @@ body.three_item_two.future .hotel_information_date {
   order_first_page_section page css end
   ====================*/
 
-
-
-
-
-
-
-
 /*===================
   StyleSheet Css End
   =====================*/
@@ -2198,7 +2199,14 @@ body.three_item_two.future .hotel_information_date {
   }
   .hotel_absulate_right_img {
     left: 0;
-}
+  }
+  /* order page css */
+  .order_body_content_area {
+    overflow: hidden;
+  }
+  .order_footer_left_absulate_img {
+    left: 0;
+  }
 }
 @media only screen and (max-width: 1200px) {
   a.progessPrev.slick-arrow {
@@ -2284,6 +2292,13 @@ body.three_item_two.future .hotel_information_date {
   /* 03_item_02_purched page css */
   .invitation_title:before {
     width: 115px;
+  }
+  /* order page css */
+  .order_top_menu ul li {
+    border-left: none;
+  }
+  .order_pricing_list_item:last-child .order_name {
+    padding: 13px 20px;
   }
 
 }
@@ -2585,10 +2600,31 @@ body.three_item_two.future .hotel_purche_btn h4{
   display: inherit;
   margin-bottom: 5px;
 }
-
-
-
-
+/* order_page responsive css  */
+.order_complete_numbering {
+  width: 50%;
+}
+.order_prics {
+  padding: 3px 20px;
+}
+.order_footer_copyright_text {
+  margin-bottom: -30px;
+}
+.order_pricing_list_Top_item .order_name {
+  padding: 4px 20px;
+}
+.contact_form_selected_option {
+  width: 42%;
+}
+.contact_order_selected_option {
+  width: 38%;
+}
+.order_done_page_content {
+  width: 100%;
+}
+.order_order_done_cinema_page.vocation .order_done_content_item:before {
+  left: -20px;
+}
 }
 
 /* Mobile Layout */
@@ -2705,6 +2741,58 @@ body.three_item_two.future .hotel_purche_btn h4{
     width: 100%;
     min-height: 250px !important;
   }
+/* order page responsive code */
+  .order_top_menu_inner {flex-direction: column;}
+  .order_top_right_side, .order_title {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .order_top_menu ul li {
+    border-left: 1px solid #ffffff;
+}
+  .order_top_right_side, .order_complete_numbering, .order_close {
+    width: 100%;
+  }
+  .order_close {
+    position: absolute;
+    left: 20px;
+  }
+  .order_top_menu_area .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  .order_top_menu_area {padding-bottom: 0;}
+  .order_complete_numbering {
+      background: #f3f3f3;
+      padding-top: 20px;
+  }
+  .order_numbering_item p {
+    color: #3e4957;
+  }
+  .order_numbering_item span {
+    background: none;
+    border: 1px solid #3e4957;
+    color: #3e4957;
+  }
+  .order_numbering_item span.active {
+      color: #fff;
+      border-color: #4db948;
+  }
+  .order_numbering_item span:before {
+    width: 215px;
+    right: 24px;
+    background: #e2e3e4;
+  }
+  .order_pricing_list_item {
+    flex-direction: column;
+}
+.order_name, .order_number_form, .order_selected_option, .order_prics {
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+}
+
 }
 
 /* small scren*/
