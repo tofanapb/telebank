@@ -6,23 +6,6 @@ $(document).ready(function () {
 		$( "#datepicker" ).datepicker();
 	} );
 	
-
-	$('#loadmore').click(function (e) { 
-		e.preventDefault();
-		$('#postgrid2').show();
-		$('.post_slider_inner').slick('setPosition'); 
-		$(this).hide();
-
-	});
-
-	$('#lodemore1').click(function (e) { 
-		e.preventDefault();
-		$('#postmore1').show();
-		$('.post_slider_inner').slick('setPosition'); 
-		$(this).hide();
-
-	});
-
 	//liked
 	$('.likebtn').on('click' , function(){
 		$(this).toggleClass('active');
@@ -50,6 +33,10 @@ $(document).ready(function () {
 	nextArrow: '<a href="#" class="progessPrev"> < </a>',
 	centerPadding: '20px',
 	responsive: [{
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+		{
 		breakpoint: 991,
 		settings: {
 			slidesToShow: 5,
@@ -267,6 +254,54 @@ $(document).ready(function () {
 			],
 		});
 
+	//blog post with more btn slider 
+	$('.post_slider_inner_more').slick({
+		dots: false,
+		cssEase: 'linear',
+		rtl: true,
+		prevArrow: '<a href="#" class="progessNext slider_arrow_balck"> > </a>',
+		nextArrow: '<a href="#" class="progessPrev slider_arrow_balck"> < </a>',
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerPadding: '20px',
+		responsive: [{
+            breakpoint: 9999,
+            settings: "unslick"
+		},
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 2,
+				centerMode: true,
+				centerPadding: '60px',
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '50px',
+			}
+		},
+		{
+			breakpoint: 575,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '30px',
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				centerMode: true,
+				centerPadding: '20px',
+			}
+		}
+			],
+		});
 	//blog post slider 
 	$('.post_slider_inner').slick({
 		dots: false,

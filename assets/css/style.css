@@ -245,7 +245,6 @@ a.advancs_submit_btn {
   padding: 20px 0;
   letter-spacing: -0.45px;
   color: #fff;
-  margin-left: 45px;
   font-size: 18px;
 }
 .menu_slider_item:nth-child(6) a {
@@ -281,7 +280,9 @@ a.advancs_submit_btn {
   margin-left: 0px;
 }
 .menu_slider_inner {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-reverse;
 }
 
 .menu_slider_inner.slick-slider {
@@ -926,7 +927,14 @@ a.progessNext.slider_arrow_balck.slick-arrow {
 .blog_post_area .section_title a {
   color: #404a58;
 }
+.post_slider_inner_more {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 
+.post_slider_inner_more .post_slider_single_item {
+    margin-bottom: 20px;
+}
 .blog_post_area {
   padding: 20px 0;
   position: relative;
@@ -951,12 +959,14 @@ a.progessNext.slider_arrow_balck.slick-arrow {
   width: 180px;
 }
 .post_slider_image {
-  min-height: 100px;
+  height: 130px;
   background: #d0c4b5;
 }
 .post_slider_image img {
   border-radius: 10px 10px 0 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .post_slider_inner .slick-list.draggable {border-radius: 10px;}
 
@@ -971,6 +981,7 @@ a.progessNext.slider_arrow_balck.slick-arrow {
 .post_content_excert {
   background: #fff;
   padding: 20px;
+  height: 190px;
 }
 
 .post_content_excert a {
@@ -999,7 +1010,7 @@ a.progessNext.slider_arrow_balck.slick-arrow {
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
-  min-height: 300px;
+  height: 320px;
 }
 .post_left_btn a.hero_boxed_btn {
   font-size: 14px;
@@ -1111,6 +1122,22 @@ body.category .hero_area .hero_slider_right_box {
   min-height: auto;
   background: none;
 }
+@media only screen and (min-width: 992px) {
+  .duble_item .post_slider_single_item {
+    height: 640px;
+}
+.duble_item .post_slider_2nd_item .post_slider_image {
+  height: 130px;
+}
+
+.duble_item .post_slider_image {
+  height: 450px;
+}
+}
+.post_slider_2nd_item {
+    height: 320px;
+}
+
 
 .post_slider_inner_category .post_slider_image {
   min-height: auto;
@@ -2349,6 +2376,9 @@ body.three_item_two.future .hotel_information_date {
   .menu_slider_inner .slick-arrow {
     top: 20%;
   }
+  .post_slider_wrapper {
+    padding: 0 10px;
+}
   .advancs_search_hidden_box.active,
   .advancs_search_btn {
     display: none;
@@ -2869,3 +2899,25 @@ body.three_item_two.future .hotel_purche_btn h4{
 /* ================
   Responsive css end
   ====================*/
+
+
+
+  /* extra  */
+  /*#region overwrite style */
+.menu_slider_item:nth-child(6) a { border-bottom: none; }
+.menu_slider_item:hover a,
+.menu_slider_item a.active { border-bottom: 3px solid #4db948; }
+.menu_slider_item a.active svg { color: #4db948; fill: #4db948; }
+
+.hero_slider_right_box { padding: 30px; height: 390px; }
+.hero_slider_img img { width: 100%; height: 390px; }
+
+.post_content_excert p { min-height: 60px; }
+
+@media only screen and (max-width: 767px) {
+.hero_slider_right_box { height: auto; }
+.hero_slider_img img { width: 100%; height: auto; }
+
+.post_content_excert p { min-height: unset; }
+}
+/*#endregion */
