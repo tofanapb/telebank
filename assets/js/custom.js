@@ -1,6 +1,40 @@
 
 
 $(document).ready(function () {
+	//order form
+	$('#orderbtn').click(function (e) { 
+		e.preventDefault();
+		$('.footer_fix_top').hide();
+		$('.oder_section').show();
+		$('#footer_order').addClass('acive_order');
+	});
+	$('.order_close').click(function (e) { 
+		e.preventDefault();
+		$('.footer_fix_top').show();
+		$('.oder_section').hide();
+		$('#footer_order').removeClass('acive_order');
+	});
+
+	$('#step1 .order_footer_link_btn').click(function (e) { 
+		e.preventDefault();
+		$('#step2').show();
+		$('#step1').hide();
+		$('#onstp1 span').addClass('ok');
+		$('#onstp1 span').removeClass('active');
+		$('#onstp2 span').addClass('active');
+		
+	});
+	$('#step2 .order_footer_link_btn').click(function (e) { 
+		e.preventDefault();
+		$('#step3').show();
+		$('#step2').hide();
+		$('#onstp2 span').addClass('ok');
+		$('#onstp2 span').removeClass('active');
+		$('#onstp3 span').addClass('active');
+		
+	});
+
+
 	// date picker 
 	$( function() {
 		$( "#datepicker" ).datepicker();

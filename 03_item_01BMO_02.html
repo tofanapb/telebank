@@ -587,18 +587,342 @@
     <!--===============
     footer_top_fixed_area start 
     =================-->
-    <div class="footer_top_fixed_area">
-        <div class="container">
-            <div class="footer_top_absolute_left_img">
-                <img src="assets/images/pics/shopping2.png" alt="">
+    <div class="footer_top_fixed_area" id="footer_order">
+        <div class="footer_fix_top">
+            <div class="container">
+                <div class="footer_top_absolute_left_img">
+                    <img src="assets/images/pics/shopping2.png" alt="">
+                </div>
+                <a href="#order_panel">
+                    <div class="footer_top_btn">
+                        <button  id="orderbtn" class="footerbtn" type="button">טופס הזמנה <img
+                                src="assets/images/icon/downcopy.png" alt=""> </button>
+    
+                    </div>
+                </a>
             </div>
-            <div class="footer_top_btn">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">טופס הזמנה <img src="assets/images/icon/downcopy.png" alt=""> </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Link-1</a></li>
-                        <li><a href="#">Link-2</a></li>
-                        <li><a href="#">Link-3</a></li>
-                    </ul>
+        </div>
+        <div class="oder_section" id="order_panel">
+            <div class="container">
+                <!--===============
+            order_top_menu_area start 
+            =================-->
+                <div class="order_top_menu_area">
+                    <div class="order_top_menu_inner">
+                        <div class="order_top_right_side">
+                            <div class="order_title">
+                                <h4>טופס הזמנה</h4>
+                            </div>
+                            <div class="order_top_menu">
+                                <ul>
+                                    <li><a href="#">חופשת קיץ במלון בראשית</a></li>
+                                    <li><a href="#"> 9-11.07.20 ה׳-ש׳</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="order_complete_numbering">
+                            <div class="order_numbering_item" id='onstp1'>
+                                <span class="active">1</span>
+                                <p>בחירת ההטבה</p>
+                            </div>
+                            <div class="order_numbering_item" id="onstp2">
+                                <span>2</span>
+                                <p>פרטי התקשרות</p>
+                            </div>
+                            <div class="order_numbering_item" id="onstp3">
+                                <span>3</span>
+                                <p>סיום</p>
+                            </div>
+                        </div>
+                        <div class="order_close">
+                            <a href="#"><img src="assets/images/icon/close.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--===============
+            order_top_menu_area end 
+            =================-->
+                <!--===============
+            order_body_content_area start 
+            =================-->
+                <div class="order_body_content_area">
+                    <div id="step1">
+                        <div class="order_body_title">
+                            <h4>מחיר עובדי דיסקונט</h4>
+                            <p>*מוגבל להרכב אחד לעובד</p>
+                        </div>
+                        <div class="order_pricing_list_inner">
+                            <div class="order_pricing_list_item">
+                                <div class="order_name">
+                                    <a href="#">
+                                        <h4>זוג</h4>
+                                    </a>
+                                </div>
+                                <div class="order_number_form">
+                                    <form action="s" method="get">
+                                        <p>בחירת כמות</p>
+                                        <a href="#">+</a>
+                                        <input type="number" name="number" placeholder="0">
+                                        <a href="#">-</a>
+                                    </form>
+                                </div>
+                                <div class="order_selected_option">
+                                    <p>*מספר תשלומים</p>
+                                    <select>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="order_prics">
+                                    <p>סה”כ: <b> ₪</b><span>590</span></p>
+                                </div>
+                            </div>
+                            <div class="order_pricing_list_item">
+                                <div class="order_name">
+                                    <a href="#">
+                                        <h4>זוג + תינוק</h4>
+                                    </a>
+                                </div>
+                                <div class="order_number_form">
+                                    <form action="s" method="get">
+                                        <p>בחירת כמות</p>
+                                        <a href="#">+</a>
+                                        <input type="number" name="number" placeholder="0">
+                                        <a href="#">-</a>
+                                    </form>
+                                </div>
+                                <div class="order_selected_option">
+                                    <p>*מספר תשלומים</p>
+                                    <select>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="order_prics">
+                                    <p>סה”כ: <b> ₪</b><span>590</span></p>
+                                </div>
+                            </div>
+                            <div class="order_pricing_list_item">
+                                <div class="order_name">
+                                    <a href="#">
+                                        <h4>זוג + ילד</h4>
+                                    </a>
+                                </div>
+                                <div class="order_number_form">
+                                    <form action="s" method="get">
+                                        <p>בחירת כמות</p>
+                                        <a href="#">+</a>
+                                        <input type="number" name="number" placeholder="0">
+                                        <a href="#">-</a>
+                                    </form>
+                                </div>
+                                <div class="order_selected_option">
+                                    <p>*מספר תשלומים</p>
+                                    <select>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="order_prics">
+                                    <p>סה”כ: <b> ₪</b><span>770</span></p>
+                                </div>
+                            </div>
+                            <div class="order_pricing_list_item">
+                                <div class="order_name">
+                                    <a href="#">
+                                        <h4>זוג + 2 ילדים
+                                            בשני חדרים</h4>
+                                    </a>
+                                </div>
+                                <div class="order_number_form">
+                                    <form action="s" method="get">
+                                        <p>בחירת כמות</p>
+                                        <a href="#">+</a>
+                                        <input type="number" name="number" placeholder="0">
+                                        <a href="#">-</a>
+                                    </form>
+                                </div>
+                                <div class="order_selected_option">
+                                    <p>*מספר תשלומים</p>
+                                    <select>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+                                <div class="order_prics">
+                                    <p>סה”כ: <b> ₪</b><span>1080</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order_btm_btn">
+                            <a href="#"><img src="assets/images/icon/add.png" alt=""> הוספת אורחים</a>
+                        </div>
+                        <div class="order_selected_items">
+                            <div class="order_selected_name">
+                                <h4>סה”כ לתשלום:</h4>
+                            </div>
+                            <div class="order_selected_prics">
+                                <p>₪<span>590</span></p>
+                            </div>
+                        </div>
+                        <div class="order_footer_link_btn">
+                            <a href="#">המשך לפרטי המזמין</a>
+                        </div>
+                    </div>
+
+                    <!-- step 1 end 
+                    ============================ -->
+                    <div id="step2">
+                        <div class="order_user_info">
+                            <div class="order_body_title">
+                                <h4>פרטי התקשרות</h4>
+                            </div>
+                            <div class="order_contact_page_from_wrapper">
+                                <div class="order_contact_from_inner">
+                                    <div class="order_contact_from_item">
+                                        <div class="order_name">
+                                            <a href="#">
+                                                <h4>פרטים
+                                                    <br> אישיים</h4>
+                                            </a>
+                                        </div>
+                                        <div class="contact_order_selected_option">
+                                            <p>יחידה ארגונית למשלוח הכרטיסים</p>
+                                            <select>
+                                                <option value="volvo">מחלקת מערכות ארגוניות - הרצל 165 קומה 3</option>
+                                                <option value="saab">מחלקת מערכות ארגוניות</option>
+                                                <option value="opel">Opel</option>
+                                                <option value="audi">Audi</option>
+                                            </select>
+                                        </div>
+                                        <div class="contact_form_selected_option">
+                                            <form action="s" method="get">
+                                                <div class="email">
+                                                    <label for="">כתובת האימייל שלך</label>
+                                                    <input type="email" name="email" placeholder="user@gmail.com">
+                                                </div>
+                                                <div class="phone">
+                                                    <label for="">מספר הטלפון שלך</label>
+                                                    <input type="tel" name="number" placeholder="054-2448484">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="order_contact_from_item">
+                                        <div class="order_name">
+                                            <a href="#">
+                                                <h4>הערות
+                                                    <br> להזמנה</h4>
+                                            </a>
+                                        </div>
+                                        <div class="contact_form_order_page">
+                                            <form action="s" method="get">
+                                                <div class="text">
+                                                    <label for="">שם מקבל החדר</label>
+                                                    <input type="text" name="text" placeholder="הזן שם מלא...">
+                                                </div>
+                                                <div class="textarea">
+                                                    <label for="">הוספת הערות להזמנה</label>
+                                                    <textarea name="text"
+                                                        placeholder="אם יש לך הערות להזמנה, יש להזינן כאן..."></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_footer_link_btn">
+                                    <a href="#">ביצוע ההזמנה</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2 end 
+                    ====================== -->
+                    <div id="step3">
+                        <div class="third_step">
+                            <div class="order_body_title">
+                                <img src="assets/images/icon/check.png" alt="">
+                                <h4>ההטבה נרכשה בהצלחה!</h4>
+                                <p>פרטי ההזמנה נשלחו לכתובת המייל שלך</p>
+                            </div>
+                            <div class="order_done_page_content">
+                                <div class="order_done_content_title">
+                                    <a href="#"><h4>סינימה סיטי- שובר VIP אמצ״ש</h4></a>
+                                    <p><img src="assets/images/icon/calendar.png" alt=""> <b>11/07 - 09</b> ה׳-ש׳</p>
+                                </div>
+                                <div class="order_done_page_print_download">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p>פרטי ההזמנה</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="download_btn_list">
+                                                <ul>
+                                                    <li><a href="#"><img src="assets/images/icon/printer.png" alt=""> הדפסה</a></li>
+                                                    <li><a href="#"><img src="assets/images/icon/google-docs.png" alt=""> אסמכתא</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_done_content_wrapper">
+                                    <div class="order_done_content_inner">
+                                        <div class="order_done_content_item">
+                                            <p>מספר הזמנה</p>
+                                            <b>23614</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>הרכב</p>
+                                            <b>זוג + ילד</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>תאריך ההזמנה</p>
+                                            <b>20.10.20  14:00</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>מספר ארוע</p>
+                                            <b>886/6</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>כמות</p>
+                                            <b>1</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>תשלומים</p>
+                                            <b>2</b>
+                                        </div>
+                                        <div class="order_done_content_item">
+                                            <p>מחיר</p>
+                                            <b>₪1080</b>
+                                        </div>
+                                    </div>
+                                    <div class="order_done_content_item_btm">
+                                        <p>הערות להזמנה: <b> אין הערות להזמנה</b></p>
+                                    </div>
+                                </div>
+                                <div class="order_done_content_btm">
+                                    <p>מלון בראשית יושב אל מול נוף קדומים עוצר נשימה ביופיו-מכתש רמון. תופעת טבע ייחודית ונדירה. המלון מתוכנן ומעוצב על פי הסטנדרטיים העדכניים והאיכותיים ביותר. במלון מסעדת רוזמרין, מסעדה איכותית במיוחד, המגישה אוכל בריא ומגוון.
+                                        מלון בראשית מזמין אתכם להציץ ולחוות מכתש ומדבר, כפי שעדיין לא חוויתם...</p>
+                                </div>
+                            </div>
+                            <div class="order_footer_link_btn">
+                                <a href="#">חזרה לעמוד הבית</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--===============
+            order_body_content_area end 
+            =================-->
             </div>
         </div>
     </div>
